@@ -16,3 +16,12 @@ ALLOWED_HOSTS:*
 
 Also you are able to place the config file wherever you wish indicating the filepath in settings.py under
 **_config_path_** variable
+
+## Requirements
+```
+Django==2.2.6
+elasticsearch==7.0.5
+pytz==2019.2
+sqlparse==0.3.0
+urllib3==1.25.6
+```
