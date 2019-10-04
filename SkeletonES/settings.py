@@ -32,7 +32,7 @@ SECRET_KEY = config.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [config.get("ALLOWED_HOSTS")]
+ALLOWED_HOSTS = config.get("ALLOWED_HOSTS").split(",")
 print("Allowed hosts:", ALLOWED_HOSTS)
 
 # ElasticSearch
